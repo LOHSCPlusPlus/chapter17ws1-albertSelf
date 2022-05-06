@@ -44,13 +44,13 @@ int main()
     }
 
 	printList(head);
-  
+  if(head != nullptr){
   Node *next = head->next;
 	delete head;
 	head = next;
 if(head == nullptr){
 tail = nullptr;
-
+  }
     printList(head);
   }
     // Part 3, delete the list
